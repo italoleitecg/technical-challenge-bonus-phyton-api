@@ -7,6 +7,8 @@ sudo apt install -y curl
 sudo apt install -y wget
 sudo apt install -y git
 sudo apt install vim -y
+sudo apt install -y python3-pip 
+pip3 install fastapi uvicorn
 
 #docker installation
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
