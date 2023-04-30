@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "challenge-vm" do |m|
     m.vm.network "private_network", ip: "172.17.177.51"
+    m.vm.network "forwarded_port", guest: 80, host: 8080
     m.vm.hostname = "challenge-vm"
     #nfs
     m.vm.synced_folder ".", "/vagrant", type: "nfs"
